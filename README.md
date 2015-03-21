@@ -4,6 +4,7 @@ A Java based tool to calculate individual share in group expenses
 This tool can be used when you want to calculate how much you need to give or get from other group members.
 For example 5 people go out on a trip.Say person A,B,C,D,E. 
 And Expenses are like:
+
 1.  Trip road cost : 2000 bucks (A paid 1000,B paid 500,C paid 500)
 2.  A,B had snacks : 50 bucks (A paid 50)
 3.  B,C,D had drinks : 150 bucks (B paid 150)
