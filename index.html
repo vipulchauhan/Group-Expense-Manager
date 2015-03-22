@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Group-expense-manager : A Java based tool to calculate individual share in group expenses">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Group-expense-manager</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vipulchauhan/Group-Expense-Manager">View on GitHub</a>
+
+          <h1 id="project_title">Group-expense-manager</h1>
+          <h2 id="project_tagline">A Java based tool to calculate individual share in group expenses</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vipulchauhan/Group-Expense-Manager/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vipulchauhan/Group-Expense-Manager/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="group-expense-manager" class="anchor" href="#group-expense-manager" aria-hidden="true"><span class="octicon octicon-link"></span></a>Group-Expense-Manager</h1>
+
+<p>A Java based tool to calculate individual share in group expenses</p>
+
+<p>This tool can be used when you want to calculate how much you need to give or get from other group members.
+For example 5 people go out on a trip.Say person A,B,C,D,E. 
+And Expenses are like:
+1.  Trip road cost : 2000 bucks (A paid 1000,B paid 500,C paid 500)
+2.  A,B had snacks : 50 bucks (A paid 50)
+3.  B,C,D had drinks : 150 bucks (B paid 150)
+4.  hotel cost       : 2500 bucks ( C paid 2500)</p>
+
+<p>Here A,B,C,D,E are added to person list file.
+There are 3 different groups:
+    G5:A,B,C,D,E;
+    G2:A,B;
+    G3:B,C,D;</p>
+
+<p>For case 1 there are 3 transaction
+A paid 1000 in G5 group : G5,A,1000
+B paid 500 in G5 group : G5,B,500
+C paid 500 in G5 group : G5,C,500</p>
+
+<p>For case 2 there is 1 transaction
+A paid 50 in G2 group : G2,A,50</p>
+
+<p>For case 3 there is 1 transaction
+B paid 150 in G3 group : G3,B,150</p>
+
+<p>For case 4 there is 1 transaction
+C paid 2500 in G5 group : G5,C,2500</p>
+
+<p>So Transaction file will have information like:
+G5,A,1000
+G5,B,500
+G5,C,500
+G2,A,50
+G3,B,150
+G5,C,2500</p>
+
+<p>Important:
+    You need to create 3 different files.
+        1. Person details file. List all the person name separated by , (comma).
+        2. Group details file.List Groups and its members. Members are separated by comma. Group are separated by ; (semi colon), Ex. G1:A,B;G2:B,C;
+        3. Transaction detail file. List of transaction which includes person name, his.her share , group . Ex. G3,B,150
+    Provide path of file where you want the result. it will be black text file.
+    Hit the calculate.
+    It will display who has to pay/get how much. It considers all the group expense and combines them. You will get all information in result file.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Group-expense-manager maintained by <a href="https://github.com/vipulchauhan">vipulchauhan</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
